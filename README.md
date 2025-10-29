@@ -54,48 +54,48 @@ Koratuwa ([translate:කොරටුව/கொரட்டுவா]) is a compr
 
 #### Project Structure
 
-Koratuwa/
-├── app/
-│ ├── src/
-│ │ ├── main/
-│ │ │ ├── java/com/example/koratuwa/
-│ │ │ │ ├── activities/ # Activity classes
-│ │ │ │ │ ├── MainActivity.kt
-│ │ │ │ │ ├── LoginActivity.kt
-│ │ │ │ │ ├── MarketPricesActivity.kt
-│ │ │ │ │ └── ...
-│ │ │ │ ├── fragments/ # Fragment classes
-│ │ │ │ │ ├── HomeFragment.kt
-│ │ │ │ │ ├── GuidesFragment.kt
-│ │ │ │ │ └── ...
-│ │ │ │ ├── adapters/ # RecyclerView adapters
-│ │ │ │ ├── models/ # Data models
-│ │ │ │ ├── repositories/ # Data repositories
-│ │ │ │ ├── viewmodels/ # ViewModel classes
-│ │ │ │ ├── utils/ # Utility classes
-│ │ │ │ │ ├── LocaleHelper.kt # Language switching
-│ │ │ │ │ ├── NotificationHelper.kt
-│ │ │ │ │ └── ...
-│ │ │ │ └── services/ # Background services
-│ │ │ │ └── FirebaseMessagingService.kt
-│ │ │ ├── res/
-│ │ │ │ ├── layout/ # XML layouts
-│ │ │ │ ├── values/ # Default strings, colors, styles
-│ │ │ │ ├── values-si/ # Sinhala strings
-│ │ │ │ ├── values-ta/ # Tamil strings
-│ │ │ │ ├── drawable/ # Images and icons
-│ │ │ │ ├── mipmap/ # App launcher icons
-│ │ │ │ └── menu/ # Menu resources
-│ │ │ ├── assets/ # PDF guides, fonts
-│ │ │ └── AndroidManifest.xml
-│ │ └── test/ # Unit tests
-│ └── build.gradle # App-level Gradle
-├── build.gradle # Project-level Gradle
-├── google-services.json # Firebase config (DO NOT COMMIT)
-├── gradle.properties
-├── settings.gradle
-├── LICENSE
-└── README.md
+    Koratuwa/
+    ├── app/
+    │ ├── src/
+    │ │ ├── main/
+    │ │ │ ├── java/com/example/koratuwa/
+    │ │ │ │ ├── activities/ # Activity classes
+    │ │ │ │ │ ├── MainActivity.kt
+    │ │ │ │ │ ├── LoginActivity.kt
+    │ │ │ │ │ ├── MarketPricesActivity.kt
+    │ │ │ │ │ └── ...
+    │ │ │ │ ├── fragments/ # Fragment classes
+    │ │ │ │ │ ├── HomeFragment.kt
+    │ │ │ │ │ ├── GuidesFragment.kt
+    │ │ │ │ │ └── ...
+    │ │ │ │ ├── adapters/ # RecyclerView adapters
+    │ │ │ │ ├── models/ # Data models
+    │ │ │ │ ├── repositories/ # Data repositories
+    │ │ │ │ ├── viewmodels/ # ViewModel classes
+    │ │ │ │ ├── utils/ # Utility classes
+    │ │ │ │ │ ├── LocaleHelper.kt # Language switching
+    │ │ │ │ │ ├── NotificationHelper.kt
+    │ │ │ │ │ └── ...
+    │ │ │ │ └── services/ # Background services
+    │ │ │ │ └── FirebaseMessagingService.kt
+    │ │ │ ├── res/
+    │ │ │ │ ├── layout/ # XML layouts
+    │ │ │ │ ├── values/ # Default strings, colors, styles
+    │ │ │ │ ├── values-si/ # Sinhala strings
+    │ │ │ │ ├── values-ta/ # Tamil strings
+    │ │ │ │ ├── drawable/ # Images and icons
+    │ │ │ │ ├── mipmap/ # App launcher icons
+    │ │ │ │ └── menu/ # Menu resources
+    │ │ │ ├── assets/ # PDF guides, fonts
+    │ │ │ └── AndroidManifest.xml
+    │ │ └── test/ # Unit tests
+    │ └── build.gradle # App-level Gradle
+    ├── build.gradle # Project-level Gradle
+    ├── google-services.json # Firebase config (DO NOT COMMIT)
+    ├── gradle.properties
+    ├── settings.gradle
+    ├── LICENSE
+    └── README.md
 ---
 
 ## ✨ Screenshots
