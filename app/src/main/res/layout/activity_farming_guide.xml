@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
-
+<!-- api-   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-->
     <!-- Banner -->
     <FrameLayout
         android:id="@+id/bannerContainer"

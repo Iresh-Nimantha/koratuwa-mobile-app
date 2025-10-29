@@ -43,7 +43,7 @@ public class FarmingGuideActivity extends BaseActivity {
     private static final String TAG = "HFApiError";
 
     // TODO: Replace with your actual Hugging Face token
-    private static final String HF_TOKEN = "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";
+    private static final String HF_TOKEN = System.getenv("HF_TOKEN");
     private static final String MODEL = "deepseek-ai/DeepSeek-V3.2-Exp:novita";
 
     private static final int MAX_RETRY_ATTEMPTS = 3;
