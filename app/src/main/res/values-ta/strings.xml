@@ -1,0 +1,345 @@
+<resources>
+    <string name="app_name">கோரடுவா</string>
+    <string name="choose_language">உங்கள் மொழியைத் தேர்வு செய்யுங்கள்</string>
+    <string name="sinhala">சிங்களம்</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="english">ஆங்கிலம்</string>
+    <string name="next">அடுத்து</string>
+    <string name="language_preference_note">உங்கள் மொழி விருப்பத்தை எப்போதும் அமைப்புகளில் மாற்றலாம்.</string>
+    <string name="welcome_message">மெயின் ஆக்டிவிட்டிக்கு வரவேற்கிறோம்</string>
+    <string name="logout">வெளியேறு</string>
+
+    <!-- Login screen strings -->
+    <string name="email_hint">மின்னஞ்சல்</string>
+    <string name="password_hint">கடவுச்சொல்</string>
+    <string name="reset">மீட்டமை</string>
+    <string name="register">பதிவு செய்</string>
+    <string name="no_account">கணக்கு இல்லையா?</string>
+    <string name="forgot_password">கடவுச்சொல் மறந்துவிட்டீர்களா?</string>
+    <string name="login">உள்நுழை</string>
+    <string name="error">ஜாஃப்னா</string>
+    <string name="please_enter_valid_email">சரியான மின்னஞ்சலை உள்ளிடவும்</string>
+    <string name="password_min_length">கடவுச்சொல் 6 எழுத்துகள் குறைந்தது இருக்க வேண்டும்</string>
+    <string name="current_password_required">தற்போதைய கடவுச்சொல் தேவை</string>
+    <string name="new_password_required">புதிய கடவுச்சொல் தேவை</string>
+    <string name="confirm_password_required">புதிய கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+    <string name="login_subtitle">உங்களை மீண்டும் பார்க்கத் திருப்தி</string>
+
+    <!-- Register screen strings -->
+    <string name="terms_and_conditions">பதிவு செய்வதன் மூலம், நீங்கள் எங்கள் நிபந்தனைகளை ஏற்றுக்கொள்கிறீர்கள்.</string>
+    <string name="full_name">முழு பெயர்</string>
+    <string name="address">முகவரி</string>
+    <string name="district">மாவட்டம்</string>
+    <string name="state">மாநிலம்</string>
+    <string name="birthday">பிறந்த தேதி</string>
+    <string name="current_status">தற்போதைய நிலை</string>
+    <string name="step_1">படி 1</string>
+    <string name="step_2">படி 2</string>
+    <string name="gmail">Gmail</string>
+    <string name="password">கடவுச்சொல்</string>
+    <string name="phoneno">தொலைபேசி எண்</string>
+    <string name="reenter_password">கடவுச்சொலை மீண்டும் உள்ளிடவும்</string>
+    <string name="registration_failed">பதிவு தோல்வி</string>
+    <string name="reg1_subtitle">உங்கள் பற்றி சற்று சொல்லுங்கள்</string>
+    <string name="reg2_subtitle">உங்கள் பாதுகாப்பான உள்நுழைவை உருவாக்குங்கள்</string>
+
+    <string name="please_enter_phone_number">தயவு செய்து தொலைபேசி எண்ணை உள்ளிடவும்</string>
+    <!-- Validation messages -->
+    <string name="is_required">தேவை</string>
+    <string name="please_reenter_password">கடவுச்சொலை மீண்டும் உள்ளிடவும்</string>
+    <string name="passwords_do_not_match">கடவுச்சொற்கள் பொருந்தவில்லை</string>
+
+    <!-- Dialog messages -->
+    <string name="registration_successful">பதிவு வெற்றி</string>
+    <string name="account_created_successfully">உங்கள் கணக்கு வெற்றிகரமாக உருவாக்கப்பட்டது!</string>
+    <string name="ok">சரி</string>
+    <string name="please_select_district">மாவட்டத்தை தேர்வு செய்யவும்</string>
+    <string name="please_select_state">மாநிலத்தை தேர்வு செய்யவும்</string>
+    <string name="please_select_status">தற்போதைய நிலையை தேர்வு செய்யவும்</string>
+    <string name="email_already_registered">இந்த மின்னஞ்சல் ஏற்கனவே பதிவு செய்யப்பட்டது. வேறு ஒன்றைப் பயன்படுத்தவும்.</string>
+    <string name="password_too_weak">கடவுச்சொல் மிகவும் பலவீனமானது. வலுவானதைத் தேர்வு செய்யவும்.</string>
+    <string name="error_checking_email">மின்னஞ்சல் கிடைமை சரிபார்ப்பில் பிழை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="validation_error">சரிபார்ப்பு பிழை</string>
+    <string name="district_name">மாவட்ட பெயர்</string>
+
+    <!-- Password Change Dialog -->
+    <string name="current_password">தற்போதைய கடவுச்சொல்</string>
+    <string name="new_password">புதிய கடவுச்சொல்</string>
+    <string name="confirm_new_password">புதிய கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+    <string name="update_password">கடவுச்சொல்லை புதுப்பிக்கவும்</string>
+    <string name="password_changed_successfully">கடவுச்சொல் வெற்றிகரமாக மாற்றப்பட்டது!</string>
+    <string name="password_change_failed">கடவுச்சொல் மாற்றம் தோல்வி</string>
+    <string name="current_password_incorrect">தற்போதைய கடவுச்சொல் தவறானது</string>
+
+    <!-- Personal Details Dialog -->
+    <string name="update_details">விவரங்களை புதுப்பிக்கவும்</string>
+    <string name="details_updated_successfully">விவரங்கள் வெற்றிகரமாக புதுப்பிக்கப்பட்டன!</string>
+    <string name="details_update_failed">விவரங்கள் புதுப்பிப்பு தோல்வி</string>
+    <string name="cancel">ரத்து</string>
+
+    <!-- Login Error Messages -->
+    <string name="login_failed">உள்நுழைவு தோல்வி</string>
+    <string name="no_account_found">இந்த மின்னஞ்சல் முகவரியில் கணக்கு இல்லை.</string>
+    <string name="incorrect_password">தவறான கடவுச்சொல். மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="invalid_email_format">தவறான மின்னஞ்சல் வடிவம்.</string>
+    <string name="account_disabled">இந்த கணக்கு முடக்கப்பட்டது.</string>
+    <string name="too_many_attempts">பல தவறான உள்நுழைவு முயற்சிகள். பின்னர் முயற்சிக்கவும்.</string>
+    <string name="network_error">பிணையில் பிழை. இணைய இணைப்பை சரிபார்க்கவும்.</string>
+    <string name="user_data_not_found">பயனர் தரவு இல்லை. மீண்டும் பதிவு செய்யவும்.</string>
+    <string name="failed_to_load_user_data">பயனர் தரவை ஏற்ற தோல்வி. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="logging_in">உள்நுழைந்து கொண்டிருக்கிறது...</string>
+    <string name="password_too_short">கடவுச்சொல் மிகவும் குறுகியது</string>
+    <string name="loading">ஒரு நிமிடம் காத்திருங்கள்</string>
+    <string name="login_successful">உள்நுழைவு வெற்றி</string>
+    <string name="login_success_message">உள்நுழைவு வெற்றி!</string>
+    <string name="banner_image_desc">பேனர் படம்</string>
+    <string name="confirm_password">கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+
+    <string name="main_subtitle">வளர்க்க. அறுவடை செய். விற். எல்லாம் ஒரே இடத்தில்</string>
+
+    <!-- Current Status-->
+    <string-array name="current_status_array">
+        <item>விவசாயி</item>
+        <item>மாணவர்</item>
+        <item>தொழில்முன்னோடி</item>
+        <item>ஆசிரியர்</item>
+        <item>மற்றவை</item>
+    </string-array>
+
+    <!-- District-->
+    <string-array name="district_array">
+        <item>மாவட்டத்தை தேர்வு செய்யுங்கள்</item>
+        <item>அம்பாறை</item>
+        <item>அனுராதாப்புரம்</item>
+        <item>பதulla</item>
+        <item>பட்டிக்கோடை</item>
+        <item>கொழும்பு</item>
+        <item>காலி</item>
+        <item>கம்பஹா</item>
+        <item>ஹம்பந்தோட்டை</item>
+        <item>யாழ்ப்பாணம்</item>
+        <item>கலுத்துறை</item>
+        <item>கண்டி</item>
+        <item>கெகalle</item>
+        <item>கிளிநொச்சி</item>
+        <item>குருணாகல்</item>
+        <item>மன்னார்</item>
+        <item>மதலே</item>
+        <item>மாத்தறை</item>
+        <item>மொனராகலா</item>
+        <item>முல்லைத்தீவு</item>
+        <item>நுவரெலியா</item>
+        <item>பொலன்னறுவை</item>
+        <item>புத்தளம்</item>
+        <item>ரத்னபுரம்</item>
+        <item>திருகோணமலை</item>
+        <item>வவுனியா</item>
+    </string-array>
+
+    <!-- State-->
+    <string-array name="state_array">
+        <item>மாநிலத்தை தேர்வு செய்யுங்கள்</item>
+        <item>மத்திய மாகாணம்</item>
+        <item>கிழக்கு மாகாணம்</item>
+        <item>வட மத்திய மாகாணம்</item>
+        <item>வடக்கு மாகாணம்</item>
+        <item>வடமேற்கு மாகாணம்</item>
+        <item>சபரகமுவ மாகாணம்</item>
+        <item>தெற்கு மாகாணம்</item>
+        <item>உவா மாகாணம்</item>
+        <item>மேற்கு மாகாணம்</item>
+    </string-array>
+
+    <!-- Dashboard/Home Screen strings -->
+    <string name="welcome">வரவேற்பு</string>
+    <string name="notifications">அறிவிப்புகள்</string>
+
+    <string name="farming_guide">விவசாய வழிகாட்டி</string>
+    <string name="price_list">விலை பட்டியல்</string>
+    <string name="price_subtitle">உடனடி விலை மதிப்பீடு பெறுங்கள்</string>
+
+    <string name="selling">விற்பனை</string>
+    <string name="get_help">உதவி பெறுங்கள்</string>
+    <string name="price_calculator">விலை கணக்கீட்டாளர்</string>
+    <string name="marketplace">சந்தை</string>
+
+    <string name="dashboard_title">டாஷ்போர்டு</string>
+    <string name="dashboard_image_desc">டாஷ்போர்டு மெயின் பேனர்</string>
+
+    <!-- Icon Descriptions (for accessibility) -->
+    <string name="settings_icon_desc">அமைப்பு ஐகான்</string>
+    <string name="bell_icon_desc">அறிவிப்பு ஐகான்</string>
+    <string name="farming_guide_icon_desc">விவசாய வழிகாட்டி ஐகான்</string>
+    <string name="price_list_icon_desc">விலை பட்டியல் ஐகான்</string>
+    <string name="selling_icon_desc">விற்பனை ஐகான்</string>
+    <string name="get_help_icon_desc">உதவி பெறுங்கள் ஐகான்</string>
+    <string name="price_calculator_icon_desc">விலை கணக்கீட்டாளர் ஐகான்</string>
+    <string name="marketplace_icon_desc">சந்தை ஐகான்</string>
+
+    <!-- Settings -->
+    <string name="settings">அமைப்புகள்</string>
+    <string name="done">முடிந்தது</string>
+    <string name="setting_subtitle">உங்கள் கணக்கு மற்றும் விருப்பங்களை நிர்வகிக்கவும்</string>
+
+    <string name="change_personal_information">தனிப்பட்ட தகவலை மாற்றவும்</string>
+    <string name="change_password">கடவுச்சொல்லை மாற்றவும்</string>
+    <string name="change_language">மொழியை மாற்றவும்</string>
+    <string name="send_us_feedback">எங்களுக்கு உங்கள் கருத்துரையை அனுப்புங்கள்</string>
+    <string name="version_1_0_beta">பதிப்பு 1.0 பீட்டா</string>
+
+    <!-- Farming Guide -->
+    <string name="farming_guide_title">விவசாய வழிகாட்டி</string>
+    <string name="farming_guide_subtitle">AI-ஆன விவசாய வழிகாட்டி</string>
+    <string name="desired_crop">விரும்பிய பயிர்</string>
+    <string name="land_location">நில உள்ளடக்கம்</string>
+    <string name="land_size">நில அளவு</string>
+    <string name="available_budget">கிடைக்கும் பட்ஜெட்</string>
+    <string name="irrigation_availability">நீர்ப்பாசனம் கிடைமை</string>
+    <string name="machinery_availability">இயந்திரம் கிடைமை</string>
+    <string name="existing_crop_type">இன்றைய பயிர் வகை</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="check">சரிபார்க்கவும்</string>
+
+    <string-array name="variants_fruits">
+        <item>ஆல்போன்சோ மாம்பழம்</item>
+        <item>ஹேடன் மாம்பழம்</item>
+        <item>கேசர் மாம்பழம்</item>
+        <item>கேவன்டிஷ் வாழைப்பழம்</item>
+        <item>லேடி ஃபிங்கர் வாழைப்பழம்</item>
+        <item>பிளாக் கோல்ட் ஜாக்ஃப்ரூட்</item>
+        <item>க்வீன் பைனாப்பிள்</item>
+        <item>ரெட் ஸ்பானிஷ் பைனாப்பிள்</item>
+        <item>அல்லாஹாபாத் குவா</item>
+        <item>சோலோ பபாயா</item>
+    </string-array>
+
+    <string-array name="land_location_array">
+        <item>கண்டி</item>
+        <item>காலி</item>
+        <item>மாத்தறை</item>
+        <item>அனுராதாப்புரம்</item>
+        <item>ஹம்பந்தோட்டை</item>
+    </string-array>
+
+    <!-- AI strings -->
+    <string name="agro_ecological_profile">ஆக்ரோ-எகாலஜிக்கல் சுயவிவரம்</string>
+    <string name="comprehensive_farming_advice">முழுமையான விவசாய ஆலோசனை</string>
+
+    <string name="help">நிபுணர் உதவி பெறுங்கள்</string>
+    <string name="share">பகிர்ந்து கொள்</string>
+
+    <string name="zone">மண்டலம்</string>
+    <string name="climatic_zone">காலநிலை மண்டலம்</string>
+    <string name="agro_eco_zone">ஆக்ரோ-எகோ மண்டலம்</string>
+    <string name="agro_eco_region">ஆக்ரோ-எகோ பகுதி</string>
+    <string name="terrain">நிலப்பகுதி</string>
+    <string name="major_soil_type">முக்கிய மண் வகை</string>
+    <string name="land_use">நில பயன்பாடு</string>
+    <string name="secondary_land_use">இரண்டாம் நில பயன்பாடு</string>
+    <string name="annual_rainfall">ஆண்டு மழைப்பொழிவு (மி.மி.)</string>
+    <string name="loading_farming_advice">முழுமையான விவசாய ஆலோசனை ஏற்றுகிறது...</string>
+    <string name="agro_ecological_title">ஆக்ரோ-எகாலஜிக்கல்</string>
+    <string name="complete_farming_report">📋 முழு விவசாய அறிக்கை</string>
+    <string name="not_available">கிடைக்கவில்லை</string>
+    <string name="notifications_title">அறிவிப்புகள்</string>
+    <string name="notifications_empty_message">உங்கள் அறிவிப்புகள் இங்கே தோன்றும்</string>
+    <string name="sample_notification">மாதிரி அறிவிப்பு உரை இங்கே</string>
+
+    <!-- Selling your Harvest -->
+    <string name="back">பின்னால்</string>
+    <string name="sell_harvest_title">உங்கள் அறுவடையை விற்கவும்</string>
+    <string name="sell">விற்</string>
+    <string name="history">வரலாறு</string>
+    <string name="quantity">அளவு</string>
+    <string name="harvested_date">அறுவடை தேதி</string>
+    <string name="description">விளக்கம்</string>
+    <string name="upload_images">படங்களை பதிவேற்றவும்</string>
+    <string name="confirm">உறுதிப்படுத்தவும்</string>
+
+    <!-- Spinner default prompt -->
+    <string name="select_crop">பயிரை தேர்வு செய்யுங்கள்</string>
+    <string name="select_crop_error">பயிர் வகையை தேர்வு செய்யவும்</string>
+
+    <!-- Input required errors -->
+    <string name="quantity_required">அளவு தேவை</string>
+    <string name="harvested_date_required">அறுவடை தேதி தேவை</string>
+    <string name="description_required">விளக்கம் தேவை</string>
+    <string name="upload_image_required">படத்தை பதிவேற்றவும்</string>
+    <string name="invalid_quantity">தவறான அளவு</string>
+    <string name="user_not_logged_in">பயனர் உள்நுழையவில்லை</string>
+
+    <!-- Success and error messages -->
+    <string name="post_saved_successfully">பதிவு வெற்றிகரமாக சேமிக்கப்பட்டது!</string>
+    <string name="failed_to_save_post">பதிவை சேமிக்க தோல்வி</string>
+
+    <string name="all">எல்லாம்</string>
+    <string name="approved">அனுமதிக்கப்பட்டது</string>
+    <string name="pending">நிலுவையில்</string>
+    <string name="rejected">மறுக்கப்பட்டது</string>
+
+    <string name="search">தேடல்</string>
+    <string name="btn_popular">பிரபலமானது</string>
+    <string name="btn_lowest">குறைந்த விலை</string>
+    <string name="btn_highest">அதிக விலை</string>
+
+    <string name="officer_name">அதிகாரி</string>
+    <string name="label_state">மாநிலம்: %1$s</string>
+    <string name="label_district">மாவட்டம்: %1$s</string>
+    <string name="label_phone">தொலைபேசி: %1$s</string>
+
+    <!-- Search hint text -->
+    <string name="search_hint">தேடல்</string>
+
+    <!-- Content descriptions -->
+    <string name="expand_icon">விரிவாக்க/சுருக்க</string>
+
+    <!-- Officer role -->
+    <string name="officer_role_agriculture_officer">விவசாய அதிகாரி</string>
+    <string name="officer_role_entrepreneur">தொழில்முன்னோடி</string>
+
+    <string name="phone">தொலைபேசி</string>
+    <string name="expandd_icon">விரிவாக்கப்பட்ட ஐகான்</string>
+
+    <string name="price_calculator_title">விலை கணக்கீட்டாளர்</string>
+    <string name="crop_type_hint">பயிர் வகை</string>
+    <string name="quantity_hint">அளவு</string>
+    <string name="total_price_label">மொத்த விலை</string>
+    <string name="default_price_text">ரூ. 00,000.00 /=</string>
+    <string name="reset_calculator">கணக்கீட்டாளரை மீட்டமை</string>
+    <string name="button_calculate">கணக்கிடவும்</string>
+
+    <string name="failed_fetch_prices">பயிர் விலைகளை பெற தோல்வி</string>
+    <string name="select_crop_type">பயிர் வகையை தேர்வு செய்யவும்</string>
+    <string name="enter_quantity">அளவை உள்ளிடவும்</string>
+    <string name="crop_price_not_found">தேர்ந்தெடுத்த பயிருக்கு விலை இல்லை</string>
+    <string name="rs_format">ரூ. %1$s /=</string>
+
+    <string name="dismiss">நீக்கு</string>
+    <string name="logo_desc">லோகோ விளக்கம்</string>
+
+    <string name="msg_gemini_key_missing">கோடில் உங்கள் ஜெமினி API விசையை அமைக்கவும்</string>
+    <string name="msg_land_location_required">சரியான ஆலோசனைக்கு நில உள்ளடக்கம் தேவை.</string>
+    <string name="msg_desired_crop_required">தனிப்பட்ட ஆலோசனைக்கு விரும்பிய பயிர் தேவை.</string>
+    <string name="msg_failed_to_get_agro_profile">ஆக்ரோ சுயவிவரத்தை பெற தோல்வி. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="msg_error_getting_agro_profile">பிழை: %1$s</string>
+    <string name="msg_failed_to_get_advice">ஆலோசனை பெற தோல்வி. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="msg_error_getting_advice">விவசாய ஆலோசனை பிழை: %1$s</string>
+    <string name="msg_error_parsing_response">ஆக்ரோ சுயவிவரம் பார்ஸிங் பிழை: %1$s</string>
+    <string name="msg_error_displaying_response">பதில் காட்டல் பிழை: %1$s</string>
+
+    <string name="btn_check">சரிபார்க்கவும்</string>
+    <string name="btn_analyzing">பகுப்பாய்வு செய்கிறது...</string>
+    <string name="btn_share_pdf">முழு விவசாய ஆலோசனை PDF பகிர்</string>
+    <string name="btn_failed_pdf">PDF உருவாக்க தோல்வி</string>
+    <string name="btn_error_sharing_pdf">PDF பகிர் பிழை: %1$s</string>
+
+    <string name="loading_comprehensive_advice">முழுமையான விவசாய ஆலோசனை ஏற்றுகிறது...</string>
+    <string name="loading_comprehensive_advice_si">விவசாய ஆலோசனை விரிவான விவரங்களுடன் பெறப்படுகிறது...</string>
+    <string name="loading_comprehensive_advice_ta">விவசாய ஆலோசனை விரிவான விவரங்களுடன் பெறப்படுகிறது...</string>
+
+    <string name="clicked">கிளிக் செய்யப்பட்டது</string>
+    <string name="please_try_again">மீண்டும் முயற்சிக்கவும்</string>
+
+    <string name="failed_to_load_prices">விலைகளை ஏற்ற தோல்வி</string>
+</resources>

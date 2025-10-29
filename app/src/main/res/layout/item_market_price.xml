@@ -1,0 +1,64 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/product_item_height"
+    android:layout_marginBottom="@dimen/product_item_margin_bottom"
+    android:clipToPadding="false"
+    android:padding="@dimen/product_item_padding"
+    app:cardCornerRadius="@dimen/product_item_corner_radius"
+    app:cardElevation="@dimen/product_item_elevation"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/search_et_margin_start"
+        android:layout_marginRight="22dp"
+        android:gravity="center_vertical">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_product"
+            android:layout_width="@dimen/product_image_size"
+            android:layout_height="@dimen/product_image_size"
+            android:layout_marginLeft="@dimen/product_text_margin_start"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_placeholder"
+            app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/product_text_margin_start"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_crop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mango - Willard"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_name_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_latest_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 120 / 1pcs"
+                android:textColor="@color/primary_green_dark"
+                android:textSize="@dimen/product_price_text_size" />
+
+            <TextView
+                android:id="@+id/tv_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 118 / 1pcs"
+                android:textColor="#808080"
+                android:textSize="@dimen/product_old_price_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

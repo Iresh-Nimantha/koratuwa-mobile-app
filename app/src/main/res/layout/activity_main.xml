@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Banner -->
+        <FrameLayout
+            android:id="@+id/fl_banner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/bannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/banner_image_desc"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_top" />
+
+            <!-- Settings Icon Button -->
+            <FrameLayout
+                android:id="@+id/cardSettings"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_dashboard_item">
+
+                <ImageView
+                    android:id="@+id/ivSettings"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/settings"
+                    android:contentDescription="@string/settings"/>
+            </FrameLayout>
+
+            <!-- Notification (Bell) Icon Button -->
+            <FrameLayout
+                android:id="@+id/cardBell"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_dashboard_item">
+
+                <ImageView
+                    android:id="@+id/ivBell"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bell"
+                    android:contentDescription="@string/notifications"/>
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            <!-- Welcome Text -->
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:shadowColor="#66000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_subtitle"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/subtitle_text_size"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="@dimen/padding_small"/>
+            </LinearLayout>>
+        </FrameLayout>
+
+        <!-- Dashboard Area -->
+        <LinearLayout
+            android:id="@+id/dashboard_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/rounded_white_card"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="32dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_banner">
+
+            <GridLayout
+                android:id="@+id/dashboard_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:useDefaultMargins="true">
+
+                <!-- Card 1: Farming Guide -->
+                <LinearLayout
+                    android:id="@+id/cardFarmingGuide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="114dp"
+                        android:contentDescription="@string/farming_guide"
+                        android:src="@drawable/farming_guide" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/farming_guide"
+                        android:textColor="#444"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Card 2: Price List -->
+                <LinearLayout
+                    android:id="@+id/cardPriceList"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="114dp"
+                        android:contentDescription="@string/price_list"
+                        android:src="@drawable/pricelist" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/price_list"
+                        android:textColor="#444"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Card 3: Selling -->
+                <LinearLayout
+                    android:id="@+id/cardSelling"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="114dp"
+                        android:contentDescription="@string/selling"
+                        android:src="@drawable/sell" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/selling"
+                        android:textColor="#444"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Card 4: Get Help -->
+                <LinearLayout
+                    android:id="@+id/cardGetHelp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="114dp"
+                        android:contentDescription="@string/get_help"
+                        android:src="@drawable/get_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/get_help"
+                        android:textColor="#444"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Card 5: Price Calculator -->
+                <LinearLayout
+                    android:id="@+id/cardPriceCalculator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="114dp"
+                        android:contentDescription="@string/price_calculator"
+                        android:src="@drawable/price_cal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/price_calculator"
+                        android:textColor="#444"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Card 6: Marketplace -->
+                <LinearLayout
+                    android:id="@+id/cardMarketplace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="114dp"
+                        android:contentDescription="@string/marketplace"
+                        android:src="@drawable/marketplace" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/marketplace"
+                        android:textColor="#444"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </GridLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

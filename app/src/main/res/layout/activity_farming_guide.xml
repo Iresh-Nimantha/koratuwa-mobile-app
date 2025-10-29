@@ -1,0 +1,251 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Banner -->
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_top" />
+
+        <!-- Back arrow -->
+
+        <ImageButton
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/back_btn_size"
+            android:layout_height="@dimen/back_btn_size"
+            android:layout_marginStart="@dimen/back_btn_margin_start"
+            android:layout_marginTop="@dimen/back_btn_margin_top"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/back"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:shadowColor="#66000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:layout_gravity="center_horizontal"
+                android:shadowRadius="2"
+                android:text="@string/farming_guide"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/farming_guide_subtitle"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/subtitle_text_size"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="@dimen/padding_small"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:padding="@dimen/padding_large"
+        app:layout_constraintTop_toBottomOf="@id/bannerContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Desired Crop -->
+
+            <!-- Land Location -->
+            <AutoCompleteTextView
+                android:id="@+id/actvDesiredCrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:background="@drawable/bg_edit_rounded"
+                android:hint="@string/desired_crop"
+                android:inputType="text"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actvLandLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:hint="@string/land_location"
+                android:background="@drawable/bg_edit_rounded"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:inputType="text" />
+
+            <!-- Land Size -->
+
+            <!-- Budget -->
+            <EditText
+                android:id="@+id/etLandSize"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:background="@drawable/bg_edit_rounded"
+                android:hint="@string/land_size"
+                android:inputType="numberDecimal"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large" />
+
+            <EditText
+                android:id="@+id/etAvailableBudget"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:hint="@string/available_budget"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_edit_rounded"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:layout_marginBottom="@dimen/padding_medium" />
+
+            <!-- Irrigation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_edit_rounded"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_small"
+                android:layout_marginBottom="@dimen/padding_medium">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/irrigation_availability"
+                    android:layout_weight="1" />
+
+                <!-- RadioGroup ensures only one selection at a time -->
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbIrrigationYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbIrrigationNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <!-- Machinery -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_edit_rounded"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_small"
+                android:layout_marginBottom="@dimen/padding_medium">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/machinery_availability"
+                    android:layout_weight="1" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbMachineryYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rbMachineryNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Existing Crop -->
+            <AutoCompleteTextView
+                android:id="@+id/actvExistingCropType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:hint="@string/existing_crop_type"
+                android:background="@drawable/bg_edit_rounded"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:inputType="text" />
+
+            <!-- Submit -->
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/check"
+                android:background="@drawable/rounded_green_button"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/button_text_size"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/progressOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

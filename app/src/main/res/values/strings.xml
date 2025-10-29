@@ -1,0 +1,345 @@
+<resources>
+    <string name="app_name">Koratuwa</string>
+    <string name="choose_language">Choose your Language</string>
+    <string name="sinhala">Sinhala</string>
+    <string name="tamil">Tamil</string>
+    <string name="english">English</string>
+    <string name="next">Next</string>
+    <string name="language_preference_note">Your language preference can be changed anytime in Settings.</string>
+    <string name="welcome_message">Welcome to Main Activity </string>
+    <string name="logout">Logout</string>
+
+    <!-- Login screen strings -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="reset">Reset</string>
+    <string name="register">Register</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="error">Jaffna</string>
+    <string name="please_enter_valid_email">please enter valid email</string>
+    <string name="password_min_length">Password must be at least 6 characters</string>
+    <string name="current_password_required">Current password is required</string>
+    <string name="new_password_required">New password is required</string>
+    <string name="confirm_password_required">Please confirm new password</string>
+    <string name="login_subtitle">Glad to see you again</string>
+
+    <!-- Register screen strings -->
+    <string name="terms_and_conditions">By signing up, you agree to our Terms and Conditions.</string>
+    <string name="full_name">Full Name</string>
+    <string name="address">Address</string>
+    <string name="district">District</string>
+    <string name="state">State</string>
+    <string name="birthday">Birthday</string>
+    <string name="current_status">Current Status</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="gmail">Gmail</string>
+    <string name="password">Password</string>
+    <string name="phoneno">Phone Number</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="registration_failed">Registration failed</string>
+    <string name="reg1_subtitle">Tell us a bit about yourself</string>
+    <string name="reg2_subtitle">Create your secure login</string>
+
+    <string name="please_enter_phone_number">Please enter phone number</string>
+    <!-- Validation messages -->
+    <string name="is_required">is required</string>
+    <string name="please_reenter_password">Please re-enter your password</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+
+    <!-- Dialog messages -->
+    <string name="registration_successful">Registration Successful</string>
+    <string name="account_created_successfully">Your account has been created successfully!</string>
+    <string name="ok">OK</string>
+    <string name="please_select_district">Please select a district</string>
+    <string name="please_select_state">Please select a state</string>
+    <string name="please_select_status">Please select your current status</string>
+    <string name="email_already_registered">This email is already registered. Please use a different email.</string>
+    <string name="password_too_weak">Password is too weak. Please choose a stronger password.</string>
+    <string name="error_checking_email">Error checking email availability. Please try again.</string>
+    <string name="validation_error">Validation Error</string>
+    <string name="district_name">District Name</string>
+
+    <!-- Password Change Dialog -->
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="password_changed_successfully">Password changed successfully!</string>
+    <string name="password_change_failed">Password change failed</string>
+    <string name="current_password_incorrect">Current password is incorrect</string>
+
+    <!-- Personal Details Dialog -->
+    <string name="update_details">Update Details</string>
+    <string name="details_updated_successfully">Details updated successfully!</string>
+    <string name="details_update_failed">Failed to update details</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Login Error Messages -->
+    <string name="login_failed">Login Failed</string>
+    <string name="no_account_found">No account found with this email address.</string>
+    <string name="incorrect_password">Incorrect password. Please try again.</string>
+    <string name="invalid_email_format">Invalid email address format.</string>
+    <string name="account_disabled">This account has been disabled.</string>
+    <string name="too_many_attempts">Too many failed login attempts. Please try again later.</string>
+    <string name="network_error">Network error. Please check your internet connection.</string>
+    <string name="user_data_not_found">User data not found. Please register again.</string>
+    <string name="failed_to_load_user_data">Failed to load user data. Please try again.</string>
+    <string name="logging_in">Logging in...</string>
+    <string name="password_too_short">Password too short</string>
+    <string name="loading">Wait for a moment</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_success_message">Login Successful!</string>
+    <string name="banner_image_desc">Banner Image</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="main_subtitle">Grow. Harvest. Sell. All in one place</string>
+
+    <!-- Current Status-->
+    <string-array name="current_status_array">
+        <item>Farmer</item>
+        <item>Student</item>
+        <item>Entrepreneur</item>
+        <item>Teacher</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- District-->
+    <string-array name="district_array">
+        <item>Select District</item>
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Badulla</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle</item>
+        <item>Kilinochchi</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Monaragala</item>
+        <item>Mullaitivu</item>
+        <item>Nuwara Eliya</item>
+        <item>Polonnaruwa</item>
+        <item>Puttalam</item>
+        <item>Ratnapura</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+    </string-array>
+
+    <!-- State-->
+    <string-array name="state_array">
+        <item>Select State</item>
+        <item>Central Province</item>
+        <item>Eastern Province</item>
+        <item>North Central Province</item>
+        <item>Northern Province</item>
+        <item>North Western Province</item>
+        <item>Sabaragamuwa Province</item>
+        <item>Southern Province</item>
+        <item>Uva Province</item>
+        <item>Western Province</item>
+    </string-array>
+
+    <!-- Dashboard/Home Screen strings -->
+    <string name="welcome">Welcome</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="farming_guide">Farming Guide</string>
+    <string name="price_list">Price list</string>
+    <string name="price_subtitle">Get an instant price estimate</string>
+
+    <string name="selling">Selling</string>
+    <string name="get_help">Get Help</string>
+    <string name="price_calculator">Price Calculator</string>
+    <string name="marketplace">Marketplace</string>
+
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_image_desc">Dashboard main banner</string>
+
+    <!-- Icon Descriptions (for accessibility) -->
+    <string name="settings_icon_desc">Settings icon</string>
+    <string name="bell_icon_desc">Notifications icon</string>
+    <string name="farming_guide_icon_desc">Farming Guide icon</string>
+    <string name="price_list_icon_desc">Price List icon</string>
+    <string name="selling_icon_desc">Selling icon</string>
+    <string name="get_help_icon_desc">Get Help icon</string>
+    <string name="price_calculator_icon_desc">Price Calculator icon</string>
+    <string name="marketplace_icon_desc">Marketplace icon</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="done">Done</string>
+    <string name="setting_subtitle">Manage your account and preferences</string>
+
+    <string name="change_personal_information">Change personal information</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_language">Change Language</string>
+    <string name="send_us_feedback">Send us your Feedback</string>
+    <string name="version_1_0_beta">Version 1.0 Beta</string>
+
+    <!-- Farming Guide -->
+    <string name="farming_guide_title">Farming Guide</string>
+    <string name="farming_guide_subtitle">AI-Powered Agricultural Guidance</string>
+    <string name="desired_crop">Desired Crop</string>
+    <string name="land_location">Land Location</string>
+    <string name="land_size">Land Size</string>
+    <string name="available_budget">Available Budget</string>
+    <string name="irrigation_availability">Irrigation Availability</string>
+    <string name="machinery_availability">Machinery Availability</string>
+    <string name="existing_crop_type">Existing Farmed Crop Type</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="check">Check</string>
+
+    <string-array name="variants_fruits">
+        <item>Alphonso Mango</item>
+        <item>Haden Mango</item>
+        <item>Kesar Mango</item>
+        <item>Cavendish Banana</item>
+        <item>Lady Finger Banana</item>
+        <item>Black Gold Jackfruit</item>
+        <item>Queen Pineapple</item>
+        <item>Red Spanish Pineapple</item>
+        <item>Allahabad Guava</item>
+        <item>Solo Papaya</item>
+    </string-array>
+
+    <string-array name="land_location_array">
+        <item>Kandy</item>
+        <item>Galle</item>
+        <item>Matara</item>
+        <item>Anuradhapura</item>
+        <item>Hambantota</item>
+    </string-array>
+
+    <!-- AI strings -->
+    <string name="agro_ecological_profile">Agro-Ecological Profile</string>
+    <string name="comprehensive_farming_advice">Comprehensive Farming Advice</string>
+
+    <string name="help">Get Expert Help</string>
+    <string name="share">Share</string>
+
+    <string name="zone">Zone</string>
+    <string name="climatic_zone">Climatic Zone</string>
+    <string name="agro_eco_zone">Agro-Ecological Zone</string>
+    <string name="agro_eco_region">Agro-Ecological Region</string>
+    <string name="terrain">Terrain</string>
+    <string name="major_soil_type">Major Soil Type</string>
+    <string name="land_use">Land Use</string>
+    <string name="secondary_land_use">Secondary Land Use</string>
+    <string name="annual_rainfall">Annual Rainfall (mm)</string>
+    <string name="loading_farming_advice">Loading comprehensive farming advice...</string>
+    <string name="agro_ecological_title">AGRO-ECOLOGICAL</string>
+    <string name="complete_farming_report">📋 Complete Farming Report</string>
+    <string name="not_available">N/A</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_empty_message">Your Notifications will appear here</string>
+    <string name="sample_notification">Sample notification text here</string>
+
+    <!-- Selling your Harvest -->
+    <string name="back">Back</string>
+    <string name="sell_harvest_title">Sell your Harvest</string>
+    <string name="sell">Sell</string>
+    <string name="history">History</string>
+    <string name="quantity">Quantity</string>
+    <string name="harvested_date">Harvested Date</string>
+    <string name="description">Description</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- Spinner default prompt -->
+    <string name="select_crop">Select Crop</string>
+    <string name="select_crop_error">Please select a crop type</string>
+
+    <!-- Input required errors -->
+    <string name="quantity_required">Quantity required</string>
+    <string name="harvested_date_required">Harvested date required</string>
+    <string name="description_required">Description required</string>
+    <string name="upload_image_required">Please upload an image</string>
+    <string name="invalid_quantity">Invalid quantity</string>
+    <string name="user_not_logged_in">User not logged in</string>
+
+    <!-- Success and error messages -->
+    <string name="post_saved_successfully">Post saved successfully!</string>
+    <string name="failed_to_save_post">Failed to save post</string>
+
+    <string name="all">All</string>
+    <string name="approved">Approved</string>
+    <string name="pending">Pending</string>
+    <string name="rejected">Rejected</string>
+
+    <string name="search">Search</string>
+    <string name="btn_popular">Popular</string>
+    <string name="btn_lowest">Lowest Rate</string>
+    <string name="btn_highest">Highest Rate</string>
+
+    <string name="officer_name">Officer</string>
+    <string name="label_state">State: %1$s</string>
+    <string name="label_district">District: %1$s</string>
+    <string name="label_phone">Phone: %1$s</string>
+
+    <!-- Search hint text -->
+    <string name="search_hint">Search</string>
+
+    <!-- Content descriptions -->
+    <string name="expand_icon">Expand/Collapse</string>
+
+    <!-- Officer role -->
+    <string name="officer_role_agriculture_officer">Agriculture officer</string>
+    <string name="officer_role_entrepreneur">Entrepreneur</string>
+
+    <string name="phone">Phone</string>
+    <string name="expandd_icon">Expanded Icon</string>
+
+    <string name="price_calculator_title">Price Calculator</string>
+    <string name="crop_type_hint">Crop type</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="total_price_label">Total Price</string>
+    <string name="default_price_text">Rs. 00,000.00 /=</string>
+    <string name="reset_calculator">Reset Calculator</string>
+    <string name="button_calculate">Calculate</string>
+
+    <string name="failed_fetch_prices">Failed to fetch crop prices</string>
+    <string name="select_crop_type">Please select crop type</string>
+    <string name="enter_quantity">Please enter quantity</string>
+    <string name="crop_price_not_found">Price not found for selected crop</string>
+    <string name="rs_format">Rs. %1$s /=</string>
+
+    <string name="dismiss">Dismiss</string>
+    <string name="logo_desc">logo_desc</string>
+
+    <string name="msg_gemini_key_missing">Please set your Gemini API key in the code</string>
+    <string name="msg_land_location_required">Land location is required for accurate advice.</string>
+    <string name="msg_desired_crop_required">Desired crop is required for personalized advice.</string>
+    <string name="msg_failed_to_get_agro_profile">Failed to get agro profile. Retry.</string>
+    <string name="msg_error_getting_agro_profile">Error: %1$s</string>
+    <string name="msg_failed_to_get_advice">Failed to get advice. Retry.</string>
+    <string name="msg_error_getting_advice">Error getting farming advice: %1$s</string>
+    <string name="msg_error_parsing_response">Error parsing agro profile: %1$s</string>
+    <string name="msg_error_displaying_response">Error displaying response: %1$s</string>
+
+    <string name="btn_check">Check</string>
+    <string name="btn_analyzing">Analyzing...</string>
+    <string name="btn_share_pdf">Share Full Farming Advice PDF</string>
+    <string name="btn_failed_pdf">Failed to create PDF</string>
+    <string name="btn_error_sharing_pdf">Error sharing PDF: %1$s</string>
+
+    <string name="loading_comprehensive_advice">Loading comprehensive farming advice...</string>
+    <string name="loading_comprehensive_advice_si">කෘෂිකර්ම උපදෙස් පූර්ණ විස්තර සමඟ ලබා ගනිමින්...</string>
+    <string name="loading_comprehensive_advice_ta">விவசாய ஆலோசனை விரிவான விவரங்களுடன் பெறப்படுகிறது...</string>
+
+    <string name="clicked">clicked</string>
+    <string name="please_try_again">Please try again</string>
+
+    <string name="failed_to_load_prices">Failed to load prices</string>
+</resources>

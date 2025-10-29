@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Banner with background image and centered title -->
+        <FrameLayout
+            android:id="@+id/fl_banner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/bannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_top" />
+
+            <ImageButton
+                android:id="@+id/back_arrow"
+                android:layout_width="@dimen/back_btn_size"
+                android:layout_height="@dimen/back_btn_size"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_arrow_forward_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:contentDescription="@string/back"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="31dp">
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:shadowColor="#66000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/reg1_subtitle"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/subtitle_text_size" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- White form card with rounded corners - Responsive -->
+        <LinearLayout
+            android:id="@+id/ll_form"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_card"
+            android:paddingStart="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_xlarge"
+            android:paddingEnd="@dimen/margin_xlarge"
+            android:paddingBottom="@dimen/margin_large"
+            android:clipToPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/fl_banner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintWidth_max="@dimen/form_max_width">
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/bg_edit_rounded"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:textColor="#111"
+                android:textColorHint="#888"
+                android:textSize="@dimen/text_size_medium"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/bg_edit_rounded"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:textColor="#111"
+                android:textColorHint="#888"
+                android:textSize="@dimen/text_size_medium"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical" />
+
+            <!-- District Dropdown -->
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/bg_edit_rounded"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:spinnerMode="dropdown" />
+
+            <!-- Birthday -->
+            <EditText
+                android:id="@+id/etBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/bg_edit_rounded"
+                android:hint="@string/birthday"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:textColor="#111"
+                android:textColorHint="#888"
+                android:textSize="@dimen/text_size_medium"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical" />
+
+            <!-- Current Status Dropdown -->
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:background="@drawable/bg_edit_rounded"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!-- Next Button - Responsive -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@drawable/rounded_green_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_large"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_form"
+            app:layout_constraintVertical_bias="0.28"
+            app:layout_constraintWidth_max="@dimen/form_max_width"
+            app:layout_constraintWidth_percent="0.9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

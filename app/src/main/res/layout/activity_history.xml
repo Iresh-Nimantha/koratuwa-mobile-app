@@ -1,0 +1,188 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Banner -->
+        <FrameLayout
+            android:id="@+id/fl_banner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/bannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/banner_image_desc"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_top" />
+
+            <LinearLayout
+                android:id="@+id/llHeaderBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/back_arrow"
+                    android:layout_width="@dimen/back_btn_size"
+                    android:layout_height="@dimen/back_btn_size"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_gravity="top|start"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/back"
+                    />
+
+                <!-- Title -->
+
+                <!-- Tab Buttons -->
+
+                <TextView
+                    android:id="@+id/tvSellTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:shadowColor="#66000000"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/sell_harvest_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSell"
+                        android:layout_width="105dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/rounded_green_button"
+                        android:text="@string/history"
+                        android:textColor="#111"
+                        app:backgroundTint="@color/white" />
+
+                    <Space
+                        android:layout_width="@dimen/margin_medium"
+                        android:layout_height="1dp" />
+
+
+                    <Button
+                        android:id="@+id/btnHistory"
+                        android:layout_width="105dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/rounded_green_button"
+                        android:text="@string/sell"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    <!-- Filters below tabs -->
+        <LinearLayout
+            android:id="@+id/ll_filters"
+            android:layout_width="411dp"
+            android:layout_height="53dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_medium"
+            android:paddingEnd="@dimen/padding_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl_banner">
+
+            <Button
+                android:id="@+id/btn_all"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/filter_button_height"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:background="@drawable/rounded_green_button"
+                android:text="@string/all"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/filter_text_size"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_approved"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/filter_button_height"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:background="@drawable/rounded_button_default"
+                android:text="@string/approved"
+                android:textAllCaps="false"
+                android:textColor="#808080"
+                android:textSize="@dimen/filter_text_size"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_pending"
+                android:layout_width="91dp"
+                android:layout_height="@dimen/filter_button_height"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:background="@drawable/rounded_button_default"
+                android:text="@string/pending"
+                android:textAllCaps="false"
+                android:textColor="#808080"
+                android:textSize="@dimen/filter_text_size"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_rejected"
+                android:layout_width="97dp"
+                android:layout_height="@dimen/filter_button_height"
+                android:background="@drawable/rounded_button_default"
+                android:text="@string/rejected"
+                android:textAllCaps="false"
+                android:textColor="#808080"
+                android:textSize="@dimen/filter_text_size"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+
+        <!-- RecyclerView for history list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_filters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

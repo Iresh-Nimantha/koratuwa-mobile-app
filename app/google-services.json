@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941089649431",
+    "project_id": "koratuwa-c2c6a4c3",
+    "storage_bucket": "koratuwa-c2c6a4c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941089649431:android:cbfe3bc4c6fbab5b777d52",
+        "android_client_info": {
+          "package_name": "com.example.koratuwa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX4v-L6HbuplcJftpEcYL76DKOS1rCrSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

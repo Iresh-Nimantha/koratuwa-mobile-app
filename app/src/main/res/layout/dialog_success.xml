@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/rounded_green_button"
+    android:backgroundTint="#FFFFFF">
+
+    <!-- Success Icon -->
+    <ImageView
+        android:id="@+id/ivSuccessIcon"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/success_card_bg" />
+
+    <!-- Success Message -->
+    <TextView
+        android:id="@+id/tvSuccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_success_message"
+        android:textSize="18sp"
+        android:textColor="@color/success_color"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/btnOkSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_green_button"
+        android:padding="12dp"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+
+        />
+</LinearLayout>

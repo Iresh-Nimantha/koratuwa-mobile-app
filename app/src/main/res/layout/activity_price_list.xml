@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top Banner Image -->
+    <ImageView
+        android:id="@+id/banner_img"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/banner_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_top"
+        android:contentDescription="@string/banner_image_desc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="@dimen/back_btn_size"
+        android:layout_height="@dimen/back_btn_size"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_forward_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/back"
+        />
+
+    <!-- Filter Buttons -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Market Price"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/search_bar_height"
+        android:layout_marginStart="@dimen/search_bar_margin_horizontal"
+        android:layout_marginEnd="@dimen/search_bar_margin_horizontal"
+        android:background="@drawable/rounded_green_button"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/search_bar_elevation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/search_et_margin_start"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/search"
+            android:textSize="@dimen/search_text_size" />
+
+        <ImageView
+            android:id="@+id/ic_search"
+            android:layout_width="@dimen/search_icon_size"
+            android:layout_height="@dimen/search_icon_size"
+            android:layout_marginEnd="@dimen/search_icon_margin_end"
+            android:src="@drawable/ic_search"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progressOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+    <!-- RecyclerView -->
+
+    <LinearLayout
+        android:id="@+id/filter_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/filter_buttons_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/filter_buttons_padding_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_img"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnPopular"
+            android:layout_width="@dimen/btn_highest_width"
+            android:layout_height="@dimen/filter_btn_height"
+            android:background="@drawable/rounded_green_button"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingLeft="@dimen/filter_btn_padding_horizontal"
+            android:paddingRight="@dimen/filter_btn_padding_horizontal"
+            android:text="@string/btn_popular"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="@dimen/filter_btn_text_size"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btnLowestRate"
+            android:layout_width="@dimen/btn_highest_width"
+            android:layout_height="@dimen/filter_btn_height"
+            android:background="@drawable/rounded_green_button"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingLeft="@dimen/filter_btn_padding_horizontal"
+            android:paddingRight="@dimen/filter_btn_padding_horizontal"
+            android:text="@string/btn_lowest"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="@dimen/filter_btn_text_size"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btnHighestRate"
+            android:layout_width="@dimen/btn_highest_width"
+            android:layout_height="@dimen/filter_btn_height"
+            android:background="@drawable/rounded_green_button"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingLeft="@dimen/filter_btn_padding_horizontal"
+            android:paddingRight="@dimen/filter_btn_padding_horizontal"
+            android:text="@string/btn_highest"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="@dimen/filter_btn_text_size"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_market_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/recycler_padding_horizontal"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter_buttons"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

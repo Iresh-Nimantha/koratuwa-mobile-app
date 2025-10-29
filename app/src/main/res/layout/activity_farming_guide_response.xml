@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Fixed Header at Top -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agro_ecological_title" />
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:contentDescription="@string/back"
+            android:elevation="2dp"
+
+            android:src="@drawable/baseline_arrow_forward_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/farming_guide_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="64dp"
+            android:letterSpacing="0.02" />
+
+    </LinearLayout>
+
+    <!-- Fixed Action Buttons at Bottom -->
+    <LinearLayout
+        android:id="@+id/action_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/help"
+            android:background="@drawable/rounded_green_button"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="2dp"
+            android:letterSpacing="0.02" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/share"
+            android:background="@drawable/rounded_green_button"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="1dp"
+            android:letterSpacing="0.02" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Content Area (Between Header and Buttons) -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_layout"
+        android:layout_above="@id/action_buttons_layout"
+        android:fillViewport="true"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Agro-Ecological Profile Summary Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_agro_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/agro_ecological_profile"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_green"
+                        android:layout_marginBottom="16dp"
+                        android:letterSpacing="0.01" />
+
+                    <!-- Zone Information -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/zone"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvZone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Climatic Zone -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/climatic_zone"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvClimaticZone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Agro Ecological Zone -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/agro_eco_zone"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvAgroEcoZone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Agro Ecological Region -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/agro_eco_region"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvAgroEcoRegion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Terrain -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/terrain"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvTerrain"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Major Soil Type -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/major_soil_type"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvMajorSoilType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Land Use -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/land_use"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvLandUse"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Secondary Land Use -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/secondary_land_use"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvSecondaryLandUse"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                    <!-- Separator Line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E8E8E8"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Annual Rainfall -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/annual_rainfall"
+                            android:textStyle="bold"
+                            android:textColor="#555555"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvAnnualRainfall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/not_available"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Comprehensive Farming Advice Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_farming_advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comprehensive_farming_advice"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_green"
+                        android:layout_marginBottom="16dp"
+                        android:letterSpacing="0.01" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_edit_rounded"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/complete_farming_report"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary_green"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:fillViewport="true"
+                            android:scrollbarStyle="outsideOverlay"
+                            android:scrollbarThumbVertical="@color/primary_green"
+                            android:scrollbarTrackVertical="@color/primary_green">
+
+                            <TextView
+                                android:id="@+id/tvFarmingAdvice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:lineSpacingExtra="8dp"
+                                android:text="@string/loading_farming_advice"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:minHeight="400dp"
+                                android:scrollbars="vertical"
+                                android:isScrollContainer="true"
+                                android:textIsSelectable="true"
+                                android:autoLink="web"
+                                android:linksClickable="true"
+                                android:padding="8dp" />
+
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/progressOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:indeterminate="true" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

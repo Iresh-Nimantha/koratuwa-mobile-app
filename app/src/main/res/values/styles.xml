@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your colors and styles here -->
+        <!-- e.g., colors, typography -->
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.App.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Main theme, inherit from your base app theme -->
+    <style name="Theme.App.Main" parent="Theme.App" />
+
+    <!-- Other styles -->
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25%</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.Material3.Light.Dialog.Alert">
+
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+    <style name="SpinnerDialog" parent="Theme.AppCompat.Dialog">
+        <!-- Transparent background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Disable dim -->
+
+    </style>
+
+    <color name="success_color">#4CAF50</color>
+    <color name="error_color">#F44336</color> <!-- Red -->
+
+
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Your theme customizations &ndash;&gt;-->
+<!--    </style>-->
+
+</resources>

@@ -1,0 +1,345 @@
+<resources>
+    <string name="app_name">කොරටුව</string>
+    <string name="choose_language">ඔබේ භාෂාව තෝරන්න</string>
+    <string name="sinhala">සිංහල</string>
+    <string name="tamil">දෙමළ</string>
+    <string name="english">ඉංග්‍රීසි</string>
+    <string name="next">ඊළඟ</string>
+    <string name="language_preference_note">ඔබේ භාෂාවේ මෙහෙයුම ඕනෑම වෙලාවක සැකසුම්වලින් වෙනස් කළ හැක.</string>
+    <string name="welcome_message">ප්‍රධාන ක්‍රියාකාරකෝලියට සාදරයෙන් පිළිගනිමු</string>
+    <string name="logout">පිටවන්න</string>
+
+    <!-- Login screen strings -->
+    <string name="email_hint">විද්‍යුත් තැපෑල</string>
+    <string name="password_hint">මුරපදය</string>
+    <string name="reset">නැවත සකසන්න</string>
+    <string name="register">ලියාපදිංචි වන්න</string>
+    <string name="no_account">ගිණුමක් නැද්ද?</string>
+    <string name="forgot_password">මුරපදය අමතකද?</string>
+    <string name="login">ලොග් වන්න</string>
+    <string name="error">යාපනය</string>
+    <string name="please_enter_valid_email">වලංගු ඊමේල් එකක් ඇතුළත් කරන්න</string>
+    <string name="password_min_length">මුරපදය අක්ෂර 6කට වඩා අඩු විය නොහැක</string>
+    <string name="current_password_required">වත්මන් මුරපදය අවශ්‍යයි</string>
+    <string name="new_password_required">නව පාස්වර්ඩ් එකක් අවශ්‍යයි</string>
+    <string name="confirm_password_required">නව පාස්වර්ඩ් තහවුරු කරන්න</string>
+    <string name="login_subtitle">ඔබව නැවත දැකීමට සතුටුයි</string>
+
+    <!-- Register screen strings -->
+    <string name="terms_and_conditions">ලියාපදිංචි වීමෙන්, ඔබ අපගේ නියම සහ තත්ත්වයන්ට එකඟ වේ</string>
+    <string name="full_name">පූර්ණ නම</string>
+    <string name="address">ලිපිනය</string>
+    <string name="district">දිස්ත්‍රික්කය</string>
+    <string name="state">රාජ්‍යය</string>
+    <string name="birthday">උපන් දිනය</string>
+    <string name="current_status">වත්මන් තත්ත්වය</string>
+    <string name="step_1">පියවර 1</string>
+    <string name="step_2">පියවර 2</string>
+    <string name="gmail">Gmail</string>
+    <string name="password">මුරපදය</string>
+    <string name="phoneno">දුරකථන අංකය</string>
+    <string name="reenter_password">මුරපදය නැවත ඇතුළත් කරන්න</string>
+    <string name="registration_failed">ලියාපදිංචිය අසාර්ථක විය</string>
+    <string name="reg1_subtitle">ඔබ ගැන තවත් යමක් අපට කියන්න</string>
+    <string name="reg2_subtitle">ඔබේ ආරක්ෂිත ලොගින් නිර්මාණය කරන්න</string>
+
+    <string name="please_enter_phone_number">කරුණාකර දුරකථන අංකය ඇතුළත් කරන්න</string>
+    <!-- Validation messages -->
+    <string name="is_required">අවශ්‍යයි</string>
+    <string name="please_reenter_password">කරුණාකර මුරපදය නැවත ඇතුළත් කරන්න</string>
+    <string name="passwords_do_not_match">මුරපද ගැලපෙන්නේ නැත</string>
+
+    <!-- Dialog messages -->
+    <string name="registration_successful">ලියාපදිංචිය සාර්ථකයි</string>
+    <string name="account_created_successfully">ඔබේ ගිණුම සාර්ථකව නිර්මාණය කරන ලදී!</string>
+    <string name="ok">හරි</string>
+    <string name="please_select_district">කරුණාකර දිස්ත්‍රික්කය තෝරන්න</string>
+    <string name="please_select_state">කරුණාකර ප්‍රාන්තය තෝරන්න</string>
+    <string name="please_select_status">කරුණාකර වත්මන් තත්ත්වය තෝරන්න</string>
+    <string name="email_already_registered">මෙම ඊමේල් ලියාපදිංචි කර ඇත. වෙනත් ඊමේල් එකක් භාවිතා කරන්න.</string>
+    <string name="password_too_weak">මුරපදය ඉතා දුර්වලයි. කරුණාකර ගැඹුරු මුරපදයක් තෝරන්න.</string>
+    <string name="error_checking_email">ඊමේල් ලබාගැනීම පරීක්ෂා කිරීමේ දෝෂය. කරුණාකර නැවත උත්සාහ කරන්න.</string>
+    <string name="validation_error">වලංගුකරණ දෝෂය</string>
+    <string name="district_name">දිස්ත්‍රික්කයේ නම</string>
+
+    <!-- Password Change Dialog -->
+    <string name="current_password">වර්තමාන මුරපදය</string>
+    <string name="new_password">නව මුරපදය</string>
+    <string name="confirm_new_password">නව මුරපදය තහවුරු කරන්න</string>
+    <string name="update_password">මුරපදය යාවත්කාලීන කරන්න</string>
+    <string name="password_changed_successfully">මුරපදය සාර්ථකව වෙනස් කරන ලදී!</string>
+    <string name="password_change_failed">මුරපදය වෙනස් කිරීම අසාර්ථක විය</string>
+    <string name="current_password_incorrect">වත්මන් පාස්වර්ඩ් එක වැරදියි</string>
+
+    <!-- Personal Details Dialog -->
+    <string name="update_details">විස්තර යාවත්කාලීන කරන්න</string>
+    <string name="details_updated_successfully">විස්තර සාර්ථකව යාවත්කාලීන කරන ලදී!</string>
+    <string name="details_update_failed">විස්තර යාවත්කාලීන කිරීම අසාර්ථක විය</string>
+    <string name="cancel">ඉවත් වන්න</string>
+
+    <!-- Login Error Messages -->
+    <string name="login_failed">ලොගින් වීම අසාර්ථක විය</string>
+    <string name="no_account_found">මෙම ඊමේල් ලිපිනය සමඟ ගිණුමක් සොයා ගැනීමට නොහැක</string>
+    <string name="incorrect_password">වැරදි පාස්වර්ඩ්. කරුණාකර නැවත උත්සාහ කරන්න.</string>
+    <string name="invalid_email_format">වැරදි ඊමේල් ලිපිනය ආකෘතිය</string>
+    <string name="account_disabled">මෙම ගිණුම අක්‍රිය කර ඇත</string>
+    <string name="too_many_attempts">ලොගින් වීමේ උත්සාහ හායනය වැඩි. කරුණාකර පසුව නැවත උත්සාහ කරන්න.</string>
+    <string name="network_error">ජාලිකරණ දෝෂය. කරුණාකර ඔබේ බිත්ති සම්බන්ධතාවය පරීක්ෂා කරන්න.</string>
+    <string name="user_data_not_found">පරිශීලක දත්ත සොයාගත නොහැක. කරුණාකර නැවත ලියාපදිංචි වන්න.</string>
+    <string name="failed_to_load_user_data">පරිශීලක දත්ත පූරණය කිරීමට අසමත් විය. කරුණාකර නැවත උත්සාහ කරන්න.</string>
+    <string name="logging_in">ලොගින් වෙමින්...</string>
+    <string name="password_too_short">මුරපදය ඉතා කෙටි</string>
+    <string name="loading">මොහොතකට බලන්න</string>
+    <string name="login_successful">ලොගින් සාර්ථකයි</string>
+    <string name="login_success_message">ලොගින් සාර්ථකයි!</string>
+    <string name="banner_image_desc">බැනර් රූපය</string>
+    <string name="confirm_password">පාස්වර්ඩ් තහවුරු කරන්න</string>
+
+    <string name="main_subtitle">වගා කරන්න. ඉටු කරන්න. විකුණන්න. සියල්ල එක තැනක</string>
+
+    <!-- Current Status-->
+    <string-array name="current_status_array">
+        <item>කර්මස්ථානික</item>
+        <item>සිසුවා</item>
+        <item>ව්‍යවසායක</item>
+        <item>ගුරුවරයා</item>
+        <item>වෙනත්</item>
+    </string-array>
+
+    <!-- District-->
+    <string-array name="district_array">
+        <item>දිස්ත්‍රික්කය තෝරන්න</item>
+        <item>අම්පාර</item>
+        <item>අනුරාධපුර</item>
+        <item>බදුල්ල</item>
+        <item>මත්තකලප</item>
+        <item>කොළඹ</item>
+        <item>ගාල්ල</item>
+        <item>ගම්පහ</item>
+        <item>හම්බන්තොට</item>
+        <item>යාපනය</item>
+        <item>කළුතර</item>
+        <item>මහනුවර</item>
+        <item>කේගල්ල</item>
+        <item>කිලිනොච්චි</item>
+        <item>කුරුණෑගල</item>
+        <item>මන්නාරම</item>
+        <item>මත්තලේ</item>
+        <item>මාතර</item>
+        <item>මොනරාගල</item>
+        <item>මුල්ලෙයිත්තිව්</item>
+        <item>නුවරඑළිය</item>
+        <item>පොළොන්නරුව</item>
+        <item>පුත්තලම</item>
+        <item>රත්නපුර</item>
+        <item>ත්‍රිකුණාමලය</item>
+        <item>වවුනියාව</item>
+    </string-array>
+
+    <!-- State-->
+    <string-array name="state_array">
+        <item>ප්‍රාන්තය තෝරන්න</item>
+        <item>මධ්‍යම පළාත</item>
+        <item>නැගෙනහිර පළාත</item>
+        <item>උතුරු මධ්‍යම පළාත</item>
+        <item>උතුරු පළාත</item>
+        <item>වයඹ පළාත</item>
+        <item>සබරගමුව පළාත</item>
+        <item>දකුණු පළාත</item>
+        <item>ඌව පළාත</item>
+        <item>බස්නාහිර පළාත</item>
+    </string-array>
+
+    <!-- Dashboard/Home Screen strings -->
+    <string name="welcome">ආයුබෝවන්</string>
+    <string name="notifications">දැනුම්දීම්</string>
+
+    <string name="farming_guide">කෘෂිකර්ම මාර්ගෝපදේශය</string>
+    <string name="price_list">මිල ලැයිස්තුව</string>
+    <string name="price_subtitle">වහාම මිල ඇස්තමේන්තයක් ලබා ගන්න</string>
+
+    <string name="selling">විකිණීම</string>
+    <string name="get_help">උදව් ලබා ගන්න</string>
+    <string name="price_calculator">මිල ගණනය කිරීම</string>
+    <string name="marketplace">වෙළඳපොළ</string>
+
+    <string name="dashboard_title">ඩෑෂ්බෝඩ්</string>
+    <string name="dashboard_image_desc">ඩෑෂ්බෝඩ් ප්‍රධාන ආකර්ෂණය</string>
+
+    <!-- Icon Descriptions (for accessibility) -->
+    <string name="settings_icon_desc">සැකසුම් සංකේතය</string>
+    <string name="bell_icon_desc">දැනුම්දීම් සංකේතය</string>
+    <string name="farming_guide_icon_desc">කෘෂිකර්මාන්ත මාර්ගෝපදේශ සංකේතය</string>
+    <string name="price_list_icon_desc">මිල ලැයිස්තුව සංකේතය</string>
+    <string name="selling_icon_desc">විකිණීම් සංකේතය</string>
+    <string name="get_help_icon_desc">උපකාර ලබාගන්නා සංකේතය</string>
+    <string name="price_calculator_icon_desc">මිල ගණනය කිරීමේ යන්ත්‍ර සංකේතය</string>
+    <string name="marketplace_icon_desc">වෙළඳපොළ ප්‍රතිරූපය</string>
+
+    <!-- Settings -->
+    <string name="settings">සැකසුම්</string>
+    <string name="done">කළ යුතු</string>
+    <string name="setting_subtitle">ඔබේ ගිණුම සහ මනාපයන් කළමනාකරණය කරන්න</string>
+
+    <string name="change_personal_information">පුද්ගලික තොරතුරු වෙනස් කරන්න</string>
+    <string name="change_password">මුරපදය වෙනස් කරන්න</string>
+    <string name="change_language">භාෂාව වෙනස් කරන්න</string>
+    <string name="send_us_feedback">අපිට ඔබේ ප්‍රතිචාර එවන්න</string>
+    <string name="version_1_0_beta">පිටපත 1.0 බීටා</string>
+
+    <!-- Farming Guide -->
+    <string name="farming_guide_title">කෘෂිකර්ම මාර්ගෝපදේශය</string>
+    <string name="farming_guide_subtitle">AI-අධිෂ්ඨාන කෘෂිකර්ම මාර්ගෝපදේශනය</string>
+    <string name="desired_crop">අපේක්ෂිත බෝගය</string>
+    <string name="land_location">ඉඩම් ස්ථානය</string>
+    <string name="land_size">ඉඩම් ප්‍රමාණය</string>
+    <string name="available_budget">ලබාගත හැකි අයවැය</string>
+    <string name="irrigation_availability">ජලාපවහන හැකියාව</string>
+    <string name="machinery_availability">යන්ත්‍රෝපකරණ හැකියාව</string>
+    <string name="existing_crop_type">වර්තමාන බෝග වර්ගය</string>
+    <string name="yes">ඔව්</string>
+    <string name="no">නැත</string>
+    <string name="check">පරීක්ෂා කරන්න</string>
+
+    <string-array name="variants_fruits">
+        <item>ඇල්ෆොන්සෝ අඹ</item>
+        <item>හේඩන් අඹ</item>
+        <item>කෙසර් අඹ</item>
+        <item>කැවන්ඩිෂ් බනානා</item>
+        <item>ලේඩි ෆින්ගර් බනානා</item>
+        <item>බ්ලැක් ගෝල්ඩ් කොස්</item>
+        <item>ක්වීන් අන්නාසි</item>
+        <item>රෙඩ් ස්පැනිෂ් අන්නාසි</item>
+        <item>අල්ලහබාඩ් පේර</item>
+        <item>සොලෝ වට්ටකකා</item>
+    </string-array>
+
+    <string-array name="land_location_array">
+        <item>මහනුවර</item>
+        <item>ගාල්ල</item>
+        <item>මාතර</item>
+        <item>අනුරාධපුර</item>
+        <item>හම්බන්තොට</item>
+    </string-array>
+
+    <!-- AI strings -->
+    <string name="agro_ecological_profile">කෘෂි-එකාකාරීය පැතිකඩ</string>
+    <string name="comprehensive_farming_advice">සම්පූර්ණ කෘෂිකර්ම උපදෙස්</string>
+
+    <string name="help">විශේෂඥ උදව් ලබාගන්න</string>
+    <string name="share">බෙදාගන්න</string>
+
+    <string name="zone">කලාපය</string>
+    <string name="climatic_zone">ගුවාත්වික කලාපය</string>
+    <string name="agro_eco_zone">කෘෂිභූමි ආර්ථික කලාපය</string>
+    <string name="agro_eco_region">කෘෂිභූමි ආර්ථික ප්‍රදේශය</string>
+    <string name="terrain">භූපෘෂ්ඨ</string>
+    <string name="major_soil_type">ප්‍රධාන මාටි වර්ගය</string>
+    <string name="land_use">භූමි භාවිතය</string>
+    <string name="secondary_land_use">ද්විතීයික භූමි භාවිතය</string>
+    <string name="annual_rainfall">වාර්ෂික වර්ෂාපතනය (මි.මි.)</string>
+    <string name="loading_farming_advice">බඩු බෙදාහරින්නාගේ උපදෙස් බාධා කරමින්...</string>
+    <string name="agro_ecological_title">කෘෂි-එකාකාරීය</string>
+    <string name="complete_farming_report">📋 සම්පූර්ණ කෘෂිකර්මාන්ත වාර්තාව</string>
+    <string name="not_available">නොමැත</string>
+    <string name="notifications_title">දැනුම්දීම්</string>
+    <string name="notifications_empty_message">ඔබේ දැනුම්දීම් මෙහි පෙන්වනු ඇත</string>
+    <string name="sample_notification">නියමු දැනුම්දීම් පාඨය මෙහි</string>
+
+    <!-- Selling your Harvest -->
+    <string name="back">පසු</string>
+    <string name="sell_harvest_title">ඔබේ බෝගය විකුණන්න</string>
+    <string name="sell">විකුණන්න</string>
+    <string name="history">ඉතිහාසය</string>
+    <string name="quantity">ප්‍රමාණය</string>
+    <string name="harvested_date">ඉටුකරන දිනය</string>
+    <string name="description">විස්තරය</string>
+    <string name="upload_images">රූප උඩුගත කරන්න</string>
+    <string name="confirm">තහවුරු කරන්න</string>
+
+    <!-- Spinner default prompt -->
+    <string name="select_crop">බෝගය තෝරන්න</string>
+    <string name="select_crop_error">කරුණාකර බෝග වර්ගයක් තෝරන්න</string>
+
+    <!-- Input required errors -->
+    <string name="quantity_required">අවශ්‍ය ප්‍රමාණය</string>
+    <string name="harvested_date_required">අවශ්‍ය ඉටුකරන දිනය</string>
+    <string name="description_required">විස්තරය අවශ්‍යයි</string>
+    <string name="upload_image_required">කරුණාකර රූපයක් උඩුගත කරන්න</string>
+    <string name="invalid_quantity">වැරදි ප්‍රමාණය</string>
+    <string name="user_not_logged_in">පරිශීලකයා ලොග් වී නැත</string>
+
+    <!-- Success and error messages -->
+    <string name="post_saved_successfully">පෝස්ට් සාර්ථකව සුරකිණි!</string>
+    <string name="failed_to_save_post">පෝස්ට් සුරකිරීමට අසමර්ථ විය</string>
+
+    <string name="all">සියල්ල</string>
+    <string name="approved">අනුමත</string>
+    <string name="pending">ඉල්ලීම්</string>
+    <string name="rejected">ප්‍රතික්ෂේප</string>
+
+    <string name="search">සෙවීම</string>
+    <string name="btn_popular">ජනප්‍රිය</string>
+    <string name="btn_lowest">අඩුම අනුපාතය</string>
+    <string name="btn_highest">ඉහළම අනුපාතය</string>
+
+    <string name="officer_name">නිලධාරි</string>
+    <string name="label_state">ප්‍රාන්තය: %1$s</string>
+    <string name="label_district">දිස්ත්‍රික්කය: %1$s</string>
+    <string name="label_phone">දුරකථනය: %1$s</string>
+
+    <!-- Search hint text -->
+    <string name="search_hint">සෙවීම</string>
+
+    <!-- Content descriptions -->
+    <string name="expand_icon">විස්තාරණය/අඩංගු කිරීම</string>
+
+    <!-- Officer role -->
+    <string name="officer_role_agriculture_officer">කෘෂිකර්ම නිලධාරී</string>
+    <string name="officer_role_entrepreneur">ව්‍යවසායක</string>
+
+    <string name="phone">දුරකථනය</string>
+    <string name="expandd_icon">විස්තාරිත චින්නය</string>
+
+    <string name="price_calculator_title">මිල ගණන් කරන්නා</string>
+    <string name="crop_type_hint">බෝග වර්ගය</string>
+    <string name="quantity_hint">ප්‍රමාණය</string>
+    <string name="total_price_label">මුළු මිල</string>
+    <string name="default_price_text">රු. 00,000.00 /=</string>
+    <string name="reset_calculator">ගණන් කරන්නා නැවත සකස් කරන්න</string>
+    <string name="button_calculate">ගණනය කරන්න</string>
+
+    <string name="failed_fetch_prices">බෝග මිල ගණන් ලබාගැනීම අසාර්ථක</string>
+    <string name="select_crop_type">කරුණාකර බෝග වර්ගය තෝරන්න</string>
+    <string name="enter_quantity">කරුණාකර ප්‍රමාණය ඇතුළත් කරන්න</string>
+    <string name="crop_price_not_found">තෝරාගත් බෝගය සඳහා මිල සොයාගත නොහැක</string>
+    <string name="rs_format">රු. %1$s /=</string>
+
+    <string name="dismiss">ප්‍රතික්ෂේප කරන්න</string>
+    <string name="logo_desc">ලෝගෝ විස්තරය</string>
+
+    <string name="msg_gemini_key_missing">කේතයේ ඔබේ Gemini API යතුර සකසන්න</string>
+    <string name="msg_land_location_required">නිවැරදි උපදෙස් සඳහා ඉඩම් ස්ථානය අවශ්‍යයි.</string>
+    <string name="msg_desired_crop_required">පුද්ගලික උපදෙස් සඳහා අපේක්ෂිත බෝගය අවශ්‍යයි.</string>
+    <string name="msg_failed_to_get_agro_profile">ආග්‍රෝ ප්‍රොෆයිල් ලබාගැනීම අසාර්ථක. නැවත උත්සාහ කරන්න.</string>
+    <string name="msg_error_getting_agro_profile">දෝෂය: %1$s</string>
+    <string name="msg_failed_to_get_advice">උපදෙස් ලබාගැනීම අසාර්ථක. නැවත උත්සාහ කරන්න.</string>
+    <string name="msg_error_getting_advice">කෘෂිකර්ම උපදෙස් ලබාගැනීමේ දෝෂය: %1$s</string>
+    <string name="msg_error_parsing_response">ආග්‍රෝ ප්‍රොෆයිල් විශ්ලේෂණයේ දෝෂය: %1$s</string>
+    <string name="msg_error_displaying_response">ප්‍රතිචාර පෙන්වීමේ දෝෂය: %1$s</string>
+
+    <string name="btn_check">පරීක්ෂා කරන්න</string>
+    <string name="btn_analyzing">විශ්ලේෂණය කරමින්...</string>
+    <string name="btn_share_pdf">සම්පූර්ණ කෘෂිකර්ම උපදෙස් PDF බෙදාගන්න</string>
+    <string name="btn_failed_pdf">PDF නිර්මාණය අසාර්ථක</string>
+    <string name="btn_error_sharing_pdf">PDF බෙදාගැනීමේ දෝෂය: %1$s</string>
+
+    <string name="loading_comprehensive_advice">සම්පූර්ණ කෘෂිකර්ම උපදෙස් බාධා කරමින්...</string>
+    <string name="loading_comprehensive_advice_si">කෘෂිකර්ම උපදෙස් පූර්ණ විස්තර සමඟ ලබා ගනිමින්...</string>
+    <string name="loading_comprehensive_advice_ta">සම්පූර්ණ කෘෂිකර්ම උපදෙස් බාධා කරමින්...</string>
+
+    <string name="clicked">ක්ලික් කළ</string>
+    <string name="please_try_again">කරුණාකර නැවත උත්සාහ කරන්න</string>
+
+    <string name="failed_to_load_prices">මිල ගණන් බාධා කිරීම අසාර්ථක</string>
+</resources>
