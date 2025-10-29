@@ -96,7 +96,6 @@ Koratuwa/
 ├── settings.gradle
 ├── LICENSE
 └── README.md
-
 ---
 
 ## ✨ Screenshots
